@@ -17,7 +17,7 @@ int main()
     system("cls");
     printf("Enter the no of integers to save in the queue ??\t:");
     scanf("%d", &size);
-    int queue[size];
+    int queue[size - 1];
 
     do
     {
@@ -72,7 +72,7 @@ int checkFull()
 
 int checkEmpty()
 {
-    if ((front == -1 && rear == -1) || front > rear)
+    if ((front == -1 && rear == -1) || front >= rear)
     {
         printf("Queue is empty\n");
         return 1;
