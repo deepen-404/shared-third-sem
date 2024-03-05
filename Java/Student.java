@@ -1,7 +1,7 @@
 public class Student{
 
-    // attribute or property
-    int id; // class scope variable
+    // property or attribute
+    int id; // class scoped variable
     String fname, lname, grade;
     float age;
 
