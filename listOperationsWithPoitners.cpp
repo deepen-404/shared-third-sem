@@ -15,7 +15,7 @@ int main()
     system("cls");
     printf("Enter the no of integers to save in the list:\t");
     scanf("%d", &size);
-
+//
     int *arr = (int *)calloc(size, sizeof(int));
     if (arr == NULL)
     {
@@ -23,11 +23,11 @@ int main()
         exit(0);
     }
 
-    //    int* arr = (int*)malloc(size * sizeof(int));
-    //    if(arr == NULL) {
-    //        printf("Memory not allocated.\n");
-    //        exit(0);
-    //    }
+//        int* arr = (int*)malloc(size * sizeof(int));
+//        if(arr == NULL) {
+//            printf("Memory not allocated.\n");
+//            exit(0);
+//        }
 
     do
     {
@@ -78,7 +78,7 @@ void insertAtIndex(int *arr)
     scanf("%d", &value);
 
     // Shift elements to the right of the index
-    for (int i = size; i > index; i--)
+    for (int i = size; i > index; i--) 
     {
         arr[i] = arr[i - 1];
     }
@@ -137,7 +137,7 @@ void checkIndex(int index)
 void traverse(int *arr)
 {
     printf("\nItems in the element are:\t");
-    for (int i = 0; i < size - 1; i++)
+    for (int i = 0; i < size ; i++)
     {
         if (arr[i] != 0)
         {
@@ -145,7 +145,7 @@ void traverse(int *arr)
         }
         else
         {
-            printf("N/A");
+            printf("N/A\t");
         }
     }
 }
