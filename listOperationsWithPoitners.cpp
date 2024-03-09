@@ -60,7 +60,7 @@ int main()
             exit(0);
             break;
         }
-    } while (choice > 0 && choice != 6);
+    } while (choice > 0 && choice != 6  );
 
     return 0;
 }
