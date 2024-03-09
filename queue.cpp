@@ -111,7 +111,7 @@ void traverse(int queue[])
     if (!checkEmpty())
     {
         printf("Items in the queue are: ");
-        for (int i = 0; i <= rear; i++)
+        for (int i = front + 1; i <= rear; i++)
         {
             printf("%d ", queue[i]);
         }
